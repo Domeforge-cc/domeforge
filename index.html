@@ -3,43 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>DomeForge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
         body {
-            background: #0d0d0d;
+            margin: 0;
+            background: #0a0a0a;
             color: #e0e0e0;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 40px;
         }
+
+        header {
+            padding: 60px 40px;
+            text-align: center;
+            background: radial-gradient(circle at center, #0f1f2f, #000000);
+            border-bottom: 1px solid #1a1a1a;
+        }
+
         h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 64px;
+            margin: 0;
             color: #4ec3ff;
+            letter-spacing: 2px;
         }
-        p {
-            font-size: 20px;
-            max-width: 700px;
+
+        .tagline {
+            font-size: 22px;
+            margin-top: 10px;
+            color: #b0dfff;
         }
+
         .section {
-            margin-top: 40px;
+            padding: 50px 40px;
+            max-width: 900px;
+            margin: auto;
         }
-        a {
+
+        h2 {
             color: #4ec3ff;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .download-box {
+            background: #111;
+            border: 1px solid #222;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .download-box a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #4ec3ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .download-box a:hover {
+            background: #82d8ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-top: 1px solid #1a1a1a;
+            color: #888;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
+
+<header>
     <h1>DomeForge</h1>
-    <p>Advanced geodesic dome engines, geometry modules, and visualization tools.</p>
+    <div class="tagline">Advanced geodesic dome engines and computational geometry modules</div>
+</header>
 
-    <div class="section">
-        <h2>Downloads</h2>
-        <p>Free modules will be available here soon, including IcosaDome and SpherePlayer.</p>
+<div class="section">
+    <h2>Overview</h2>
+    <p>
+        DomeForge is a collection of high‑performance geometry engines designed for dome generation,
+        structural visualization, and computational modeling. Each module is built with precision,
+        deterministic algorithms, and clean JSON output pipelines.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Free Downloads</h2>
+
+    <div class="download-box">
+        <h3>IcosaDome</h3>
+        <p>Generate icosahedral geodesic domes with clean JSON output and optional PNG visualization.</p>
+        <a href="#">Download (coming soon)</a>
     </div>
 
-    <div class="section">
-        <h2>About</h2>
-        <p>DomeForge is a collection of computational geometry engines designed for dome generation, visualization, and structural analysis.</p>
+    <div class="download-box">
+        <h3>SpherePlayer</h3>
+        <p>Visualize dome geometry, inspect PNG renders, and explore structural layouts.</p>
+        <a href="#">Download (coming soon)</a>
     </div>
+</div>
+
+<div class="section">
+    <h2>Modules</h2>
+    <p>
+        DomeForge includes a growing suite of geometry engines:
+        IcosaDome, SpherePlayer, Schwedler, Lamella, TetraDome, and experimental Fibonacci‑based panelizers.
+        More modules will be added here as they are released.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Documentation</h2>
+    <p>
+        JSON schema definitions, geometry pipelines, module specifications, and rendering workflows
+        will be available soon. DomeForge emphasizes clarity, deterministic output, and reproducible geometry.
+    </p>
+</div>
+
+<footer>
+    © 2026 DomeForge — Computational Geometry Engines
+</footer>
+
 </body>
 </html>
