@@ -13,7 +13,6 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Navigation Bar */
         nav {
             background: #000;
             border-bottom: 1px solid #1a1a1a;
@@ -65,6 +64,12 @@
             margin-bottom: 10px;
         }
 
+        h3 {
+            color: #4ec3ff;
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -89,18 +94,13 @@
         }
 
         .download-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 18px;
-            background: #4ec3ff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 6px;
+            color: #4ec3ff;
             font-weight: bold;
+            text-decoration: none;
         }
 
         .download-link:hover {
-            background: #82d8ff;
+            color: #82d8ff;
         }
 
         footer {
@@ -116,7 +116,6 @@
 
 <body>
 
-<!-- Navigation Bar -->
 <nav>
     <a href="index.html">Home</a>
     <a href="background.html">Background</a>
@@ -127,36 +126,33 @@
 
 <header>
     <h1>DomeForge</h1>
-    <div class="tagline">Unified front‑end for advanced dome geometry engines</div>
+    <div class="tagline">Create Advanced Dome Geometries in Minutes</div>
 </header>
 
 <div class="section">
-    <h2>Master Program</h2>
+    <h2>Overview</h2>
     <p>
-        DomeForge is the unified front‑end application that provides access to all DomeForge geometry engines 
-        and visualization tools. It offers a consistent GUI, deterministic output pipeline, and builder‑grade 
-        export bundles for every module.
+        DomeForge is a unified suite of geometry engines and visualization tools for anyone interested 
+        in exploring geodesic domes. It offers a powerful interactive dome builder GUI and produces 
+        detailed geometry output.
     </p>
-    <p><strong>Coming Soon</strong></p>
 
     <div class="placeholder">Logo Placeholder</div>
 </div>
 
 <div class="section">
-    <h2>Suite Overview</h2>
+    <h2>DomeForge Modules</h2>
 
-    <h3>Classic Geometry Modules</h3>
-    <p>A family of Platonic‑solid‑based dome generators used for geodesic exploration and practical dome design.</p>
+    <h3>Classic Geometry</h3>
     <ul>
         <li>Tetrahedron</li>
         <li>Hexahedron / Cube</li>
         <li>Octahedron</li>
-        <li>Icosahedron</li>
+        <li>Icosahedron — <a class="download-link" href="downloads.html">Free Download</a></li>
         <li>Dodecahedron</li>
     </ul>
 
-    <h3>Patterned Geometry Modules</h3>
-    <p>Pattern‑driven dome engines exploring lamella, ribbed, elliptical, warped, and phyllotaxis‑based geometries.</p>
+    <h3>Patterned Geometry</h3>
     <ul>
         <li>Lamella</li>
         <li>Schwedler</li>
@@ -165,8 +161,7 @@
         <li>WarpSurf</li>
     </ul>
 
-    <h3>Exotic Geometry Modules</h3>
-    <p>Advanced and unusual polyhedral forms for creative exploration and hybrid panel systems.</p>
+    <h3>Exotic Geometry</h3>
     <ul>
         <li>Snub Cube</li>
         <li>Snub Dodecahedron</li>
@@ -174,21 +169,6 @@
         <li>Small Rhombicosidodecahedron (SRID)</li>
         <li>BiPyramid Dome</li>
     </ul>
-
-    <h3>Players</h3>
-    <p>Visualization tools for exploring dome geometry and comparing module outputs.</p>
-    <ul>
-        <li>DomePlayer</li>
-        <li>SpherePlayer</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Free Downloads</h2>
-    <a class="download-link" href="downloads.html">IcosaDome — Free Download</a><br><br>
-    <a class="download-link" href="downloads.html">SpherePlayer — Free Download</a>
-
-    <div class="placeholder">Screenshot Placeholder</div>
 </div>
 
 <footer>
