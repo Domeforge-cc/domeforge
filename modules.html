@@ -1,90 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>DomeForge Modules</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            margin: 0;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        nav {
-            background: #000;
-            border-bottom: 1px solid #1a1a1a;
-            padding: 12px 30px;
-            display: flex;
-            gap: 30px;
-            font-size: 18px;
-        }
+<title>DomeForge Modules</title>
 
-        nav a {
-            color: #4ec3ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+<style>
 
-        nav a:hover {
-            color: #82d8ff;
-        }
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        .section {
-            padding: 50px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+nav {
+    background: #000;
+    border-bottom: 1px solid #222;
+    padding: 14px 30px;
+    display: flex;
+    gap: 30px;
+}
 
-        h2 {
-            color: #4ec3ff;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
+nav a {
+    color: #4ec3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        h3 {
-            color: #4ec3ff;
-            font-size: 28px;
-            margin-top: 40px;
-        }
+nav a:hover {
+    color: #82d8ff;
+}
 
-        details {
-            background: #111;
-            border: 1px solid #222;
-            border-radius: 8px;
-            padding: 15px 20px;
-            margin-top: 20px;
-        }
+header {
+    text-align: center;
+    padding: 50px 30px;
+    background: radial-gradient(circle at center, #11253a, #000000);
+    border-bottom: 1px solid #222;
+}
 
-        summary {
-            cursor: pointer;
-            font-size: 22px;
-            color: #82d8ff;
-            font-weight: bold;
-        }
+h1 {
+    color: #4ec3ff;
+    font-size: 54px;
+    margin-bottom: 10px;
+}
 
-        summary:hover {
-            color: #b0e4ff;
-        }
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 35px;
+}
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-top: 15px;
-            white-space: pre-line;
-        }
+h2 {
+    color: #4ec3ff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            border-top: 1px solid #1a1a1a;
-            color: #888;
-            font-size: 14px;
-        }
-    </style>
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.category-box {
+    background: #111;
+    border-left: 4px solid #4ec3ff;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.category-box ul {
+    line-height: 2.0;
+}
+
+.category-box a {
+    color: #82d8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-box a:hover {
+    color: #b0e4ff;
+}
+
+details {
+    margin-bottom: 15px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    background: #111;
+}
+
+summary {
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4ec3ff;
+}
+
+summary:hover {
+    background: #151515;
+}
+
+.module-content {
+    padding: 0 25px 25px 25px;
+}
+
+.module-content h4 {
+    color: #82d8ff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.module-content ul {
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #222;
+    color: #888;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -97,259 +141,68 @@
     <a href="documentation.html">Documentation</a>
 </nav>
 
+<header>
+    <h1>DomeForge Modules</h1>
+</header>
+
 <div class="section">
-    <h2>DomeForge Modules</h2>
+
     <p>
-        DomeForge includes a comprehensive suite of geometry engines and visualization tools.  
-        Click any module below to expand its full description.
+        DomeForge includes fifteen geometry engines and two visualization players organized into four broad categories:
+        Classic Geometry, Patterned Geometry, Exotic Geometry, and Visualization Players.
+        Click any module below to explore its geometric background, practical applications,
+        and unique DomeForge capabilities.
     </p>
 
-    <!-- CLASSIC -->
-    <h3>Classic Geometry</h3>
+    <div class="category-box">
 
-    <details>
-        <summary>Tetrahedron</summary>
-        <p>
-Geometric Background:
-The Tetrahedron is the most basic of the Platonic solids. It has 4 vertices, 6 edges, and 4 equilateral triangle faces.
+        <h3>Categories</h3>
 
-Practical Uses / DomeForge Exploration:
- • Primarily used for educational exploration of geodesic and polyhedral geometry.
- • The default TetraDome truncated just below the equator works well in either vertex down or vertex up orientation for frequencies of 4 and above.
- • Taken to a maximum 16 frequency our TetraDome reveals how this platonic solid can evolve into a more architecturally interesting form that is more aestetic than structurally practical/efficient.
-        </p>
-    </details>
+        <ul>
+            <li><a href="#classic">Classic Geometry</a></li>
+            <li><a href="#patterned">Patterned Geometry</a></li>
+            <li><a href="#exotic">Exotic Geometry</a></li>
+            <li><a href="#players">Visualization Players</a></li>
+        </ul>
 
-    <details>
-        <summary>Hexahedron / Cube</summary>
-        <p>
-Geometric Background:
-This is the most familiar of the Platonic solids. It has 8 vertices, 12 edges and 6 square faces.
+    </div>
 
-Practical Uses / DomeForge Exploration:
- • Primarily used for educational exploration of geodesic and polyhedral geometry.
- • A 4 frequency truncated at the equator produces a visually appealing yet simple dome with perfect truncation at the equator.
- • We have also introduced the X-Wise primary panel subdivision option which shows off the Cube’s architectural potential for domes.
-        </p>
-    </details>
+    <!-- ====================================================== -->
+    <!-- CLASSIC GEOMETRY                                       -->
+    <!-- ====================================================== -->
 
-    <details>
-        <summary>Octahedron</summary>
-        <p>
-Geometric Background:
-Many people visualize the Octahedron as 2 back-to-back square pyramids. It has 6 vertices, 12 edges, and 8 equilateral faces. It is the second most popular base shape for geodesic dome builders of both simple and higher frequency domes.
+    <h2 id="classic">Classic Geometry</h2>
 
-Practical Uses / DomeForge Exploration:
- • As a partial dome, the Octahedron lends itself well to abut to flat walls/surfaces of other structures.
- • DomeForge provides 3 “methods” of Octahedron subdivision including an interesting version that generates a dome with equal chord lengths on the primary panel edges (great circles).
- • A 3 frequency OctaDome provides a perfect “simple” dome with only 3 strut lengths and 2 panel types good for backyard builders.
- • A 7 frequency “equal primary” OctaDome was used to design the end caps of the Belltown dome in Ottawa, Canada.
-        </p>
-    </details>
+    <!-- Classic modules will be inserted here -->
 
-    <details>
-        <summary>Icosahedron</summary>
-        <p>
-Geometric Background:
-The icosahedron is the Platonic solid most frequently used in spherical polyhedron subdivision. It has 12 vertices, 30 edges and 20 equilateral faces, the most of any Platonic solid. The icosahedron is almost synonymous with “Geodesic Dome” and was famously popularized by Buckminster Fuller.
+    <!-- ====================================================== -->
+    <!-- PATTERNED GEOMETRY                                     -->
+    <!-- ====================================================== -->
 
-Practical Uses / DomeForge Exploration:
- • At lower frequencies, the icosahedron is used for dome homes and recreational structures. The “Equal Chords” and “Mexican” or “Equal Arcs 3GC” are popular subdivision “methods” because they have low numbers of distinct strut lengths and panel sizes. For example a 3 frequency “Equal Cords” IcosaDome has only 3 unique strut lengths and 2 panel sizes making it straight forward to fabricate and assemble.
- • The icosahedron behaves well as frequencies increase and truncation levels vary. DomeForge permits dome truncation at any level and provides an “adaptive band” tool to modify strut lengths and panel sizes near the truncation level to achieve a perfectly flat base. The truncation level and adaptive tool are “fun” to play with as you iterate to target geometry.
- • There are many spectacular higher frequency IcosaDomes such as “Spaceship Earth” at EPCOT and the Biosphere in Montreal. You can get a good approximation of the Biosphere using a 12 frequency, -.8 truncation, .02 adaptive band.
-        </p>
-    </details>
+    <h2 id="patterned">Patterned Geometry</h2>
 
-    <details>
-        <summary>Dodecahedron</summary>
-        <p>
-Geometric Background:
-The Duodecahedron is the most complex of the Platonic solids with 30 edges, 12 pentagonal faces and 20 vertices. Because of its complex geometry and high number of vertices it adapts naturally to the sphere.
+    <!-- Patterned modules will be inserted here -->
 
-Practical Uses / DomeForge Exploration:
- • The duodecahedron seems like an under utilized geodesic geometry for domes. This is likely because it does not truncate cleanly.
- • A simple DomeForge duodecadome with a frequency of 2 and truncation at -.3 actually produces a nice simple dome with 30 identical panels and 2 strut lengths.
- • At higher frequencies with the fullerene option activated some architecturally exciting fullerene domes/spheres can be created.
-        </p>
-    </details>
+    <!-- ====================================================== -->
+    <!-- EXOTIC GEOMETRY                                        -->
+    <!-- ====================================================== -->
 
-    <!-- PATTERNED -->
-    <h3>Patterned Geometry</h3>
+    <h2 id="exotic">Exotic Geometry</h2>
 
-    <details>
-        <summary>Lamella</summary>
-        <p>
-Geometric Overview:
-Lamella domes have concentric rings in the horizontal plane with ribs that spiral up from the base. The rib pattern may be single or dual to create patterns of diamonds and/or triangles which get smaller towards the apex. Close to the apex a transition may occur to consolidate the number of struts and eliminate small panel sizes. Lamella domes have regular and repetitive strut and panel sizes which make manufacturing time fast and assembly easy.
+    <!-- Exotic modules will be inserted here -->
 
-Practical Uses:
- • Lamella domes are popular for large shallow dome commercial applications such as sports facilities and for architectural applications within larger structures because of their natural beauty.
+    <!-- ====================================================== -->
+    <!-- VISUALIZATION PLAYERS                                  -->
+    <!-- ====================================================== -->
 
-DomeForge Features:
- • Multiple varieties of Lamellas are selectable.
- • Domes may be deep or shallow geometries with user selectable ring and rib frequency.
- • A “squish” factor may be applied to compress dome height.
-        </p>
-    </details>
+    <h2 id="players">Visualization Players</h2>
 
-    <details>
-        <summary>Schwedler</summary>
-        <p>
-Geometric Overview:
-The Schwedler Dome is the extension of a simple ribbed dome. It simply adds diagonal struts in a variety of orientations to create triangulated panels. Its regular and simple geometry make it popular for industrial applications such as tank covers. We have added a "Twist" option which adds more architectural flare to the basic rib layouts. Schwedler domes are easy to fabricate but not the most structurally efficient. 
-
-DomeForge Features:
- • Multiple varieties of rib/bracing arrangements ranging from a simple rib/ring dome to a fully cross braced version.
- • A “Twist” factor to skew vertical ribs in a Lamella like way.
- • A “Squish” factor to compress the vertical height of the dome.
-        </p>
-    </details>
-
-    <details>
-        <summary>Fibonacci Dome</summary>
-        <p>
-Geometric Overview:
-Fibonacci Dome explores spherical domes based on phyllotaxis point distributions using the golden angle. Points are laid out on the sphere in a spiral pattern, then truncated and panelized into a hybrid of triangular and quadrilateral panels. The result is a visually rich, highly regular dome that does not rely on Platonic subdivision.
-
-DomeForge Features:
- • Golden-angle Fibonacci point distribution with user-selectable point count.
- • Dome truncation and real-world diameter controls with units.
- • Stable nearest-neighbor strut network and hybrid triangle/quad panelization.
- • Panel-type IDs based on edge/area signatures, exported via JSON for SpherePlayer2w and DomePlayer.
-        </p>
-    </details>
-
-    <details>
-        <summary>ElliptiDome</summary>
-        <p>
-Geometric Overview:
-ElliptiDome explores domes and shells based on elliptical footprints rather than circular bases. This allows elongated domes and vault-like structures that better match real-world architectural constraints.
-
-DomeForge Features:
- • Elliptical base geometry with controllable major/minor axes.
- • Frequency and truncation controls adapted to elliptical layouts.
- • Panel-type and strut-type analysis in real-world units.
- • Series‑2 preview with solid, wireframe, and panel-type views.
-        </p>
-    </details>
-
-    <details>
-        <summary>WarpSurf</summary>
-        <p>
-Geometric Overview:
-WarpSurf explores warped surface geometries over rectangular or elliptical footprints. It blends edge curvature, central dome shaping, and patterned panelization to create architecturally expressive roof and canopy forms.
-
-DomeForge Features:
- • Real-world envelope controls (width, depth, max height).
- • Edge curvature and twist controls with Straight / Ellipse / Parabola profiles.
- • Multiple panelization patterns including rectangular, radial, lamella, and Schwedler-like arrangements.
- • Full output bundle with solid, wireframe, colored panels, fabrication view, and panel type list.
-        </p>
-    </details>
-
-    <!-- EXOTIC -->
-    <h3>Exotic Geometry</h3>
-
-    <details>
-        <summary>Snub Cube</summary>
-        <p>
-The snub cube or snic, also called the snub cuboctahedron, is one of the 13 Archimedean solids.
-Its surface consists of 24 snub triangles, 8 more triangles, and 6 squares, 
-with four triangles and one square meeting at each vertex.
-        </p>
-    </details>
-
-    <details>
-        <summary>Snub Dodecahedron</summary>
-        <p>
-Geometric Overview:
-The snub dodecahedron is an Archimedean solid derived from the regular dodecahedron
-by a chiral “snub” operation. Its surface consists of 80 triangles and 12 pentagons,
-with a rich, swirling pattern of faces around each vertex.
-
-DomeForge Exploration:
- • As a dome or sphere, the snub dodecahedron produces highly regular yet visually
-   complex panel layouts.
- • It is well suited for advanced geodesic exploration where both symmetry and
-   architectural expressiveness are important.
-        </p>
-    </details>
-
-    <details>
-        <summary>Small Rhombicuboctahedron (SRCO)</summary>
-        <p>
-Geometric Overview:
-The small rhombicuboctahedron is an Archimedean solid with 26 faces:
-8 triangles and 18 squares. Each vertex joins one triangle and three squares,
-creating a very regular, grid-like polyhedral structure.
-
-DomeForge Exploration:
- • As a dome or spherical framework, this solid yields panel families that are
-   easy to classify and fabricate.
- • Its mix of triangular and square faces makes it a useful testbed for hybrid
-   panel systems and for exploring non‑purely triangular geodesic layouts.
-        </p>
-    </details>
-
-    <details>
-        <summary>Small Rhombicosidodecahedron (SRID)</summary>
-        <p>
-Geometric Overview:
-The small rhombicosidodecahedron (SRID) is an Archimedean solid with 62 faces:
-20 triangles, 30 squares, and 12 pentagons. Each vertex joins one triangle,
-one square, and one pentagon, producing a highly symmetric and evenly distributed
-polyhedral framework.
-
-DomeForge Exploration:
- • As a dome or spherical framework, the SRID offers a rich yet balanced mix of
-   face types, making it ideal for hybrid panel systems and advanced structural studies.
- • With centroid‑based pentagon triangulation and selectable quad subdivision,
-   the SRID produces remarkably uniform triangular panels even at f=1.
- • Its geometry supports both low‑frequency structural domes and higher‑frequency
-   geodesic refinements, maintaining symmetry and clean load paths across all modes.
-        </p>
-    </details>
-
-    <details>
-        <summary>BiPyramid Dome</summary>
-        <p>
-Triangular and Pentagonal bipyramids with regular faces are known as 
-Johnson solids #12 and #13. If they are elongated the new solids become
-Johnson solids #14 and #16. The first two have similarities to the classic tetrahedron
-and icosahedron and are reasonable dome geometries. These solids are examples of 
-composite polyhedron because they are constructed by using two regular, in this case Platonic solids.
-        </p>
-    </details>
-
-    <!-- PLAYERS -->
-    <h3>Players</h3>
-
-    <details>
-        <summary>DomePlayer</summary>
-        <p>
-Geometric Overview:
-DomePlayer is a visualization and comparison tool tailored to lower-frequency domes that builders may realistically construct. It focuses on clean truncation, low numbers of panel types, and low numbers of strut types, making it ideal for practical dome design and evaluation.
-
-DomeForge Exploration:
- • Use DomePlayer to load and compare candidate dome designs generated from the Platonic modules (Tetra, Hexa, Octa, Icosa, Dodeca).
- • The emphasis is on buildable geometries: clean bases, manageable panel families, and efficient strut sets.
- • DomePlayer can be used by dome builders to share and review dome designs with one another, providing a common visual language for discussing options.
-        </p>
-    </details>
-
-    <details>
-        <summary>SpherePlayer</summary>
-        <p>
-SpherePlayer provides interactive visualization of dome geometry, allowing inspection of PNG renders,
-structural layouts, and module outputs. It is ideal for exploring high-frequency domes generated
-by DomeForge’s advanced modules.
-        </p>
-    </details>
+    <!-- Player modules will be inserted here -->
 
 </div>
 
 <footer>
-    © 2026 DomeForge — Computational Geometry Engines
+    © 2026 DomeForge
 </footer>
 
 </body>
