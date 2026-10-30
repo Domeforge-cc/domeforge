@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DomeForge - Background</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: #000;
+    border-bottom: 1px solid #222;
+    padding: 14px 30px;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #4ec3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #82d8ff;
+}
+
+header {
+    text-align: center;
+    padding: 50px 30px;
+    background: radial-gradient(circle at center, #11253a, #000000);
+    border-bottom: 1px solid #222;
+}
+
+h1 {
+    font-size: 54px;
+    color: #4ec3ff;
+    margin-bottom: 10px;
+}
+
+.section {
+    max-width: 950px;
+    margin: auto;
+    padding: 40px 35px;
+}
+
+h2 {
+    color: #4ec3ff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.feature-box {
+    background: #111;
+    border-left: 4px solid #4ec3ff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.image-placeholder {
+    height: 240px;
+    border: 1px dashed #333;
+    border-radius: 8px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #222;
+    color: #888;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="background.html">Background</a>
+    <a href="modules.html">Modules</a>
+    <a href="downloads.html">Downloads</a>
+    <a href="documentation.html">Documentation</a>
+</nav>
+
+<header>
+    <h1>Background</h1>
+</header>
+
+<div class="section">
+
+    <h2>Origin Story</h2>
+
+    <p>
+        Geodesic domes were popularized during the 1960s and 1970s by Buckminster Fuller and his many advocates.
+        They embodied both a futuristic aesthetic and structural efficiency, which led to widespread interest in
+        applications ranging from modest dome homes to iconic structures such as Spaceship Earth at EPCOT and
+        the United States Pavilion at Expo 67, now known as the Biosphere, in Montreal, Canada.
+    </p>
+
+    <p>
+        The icosahedron became the dominant geometry used for geodesic dome construction. However,
+        obtaining the detailed geometric information required for structural analysis, fabrication,
+        and visualization was often difficult and time consuming.
+    </p>
+
+    <p>
+        As an exploratory project, I became curious whether modern AI could help recreate a geodesic
+        design application similar to one I had written in FORTRAN during the 1970s.
+        To my surprise, it could. In less than a day, I had the beginnings of an application
+        that already exceeded the capabilities of my original effort.
+    </p>
+
+    <p>
+        One thing led to another, and I soon found myself heading down the dome rabbit hole.
+    </p>
+
+    <p>
+        Along the way I discovered an entire world of dome and sphere geometries described in
+        Edward S. Popko's excellent book <em>Divided Spheres</em>. If you are a dome enthusiast,
+        I highly recommend it.
+    </p>
+
+    <p>
+        DomeForge was heavily inspired by that work and represents my attempt to provide a generalized
+        workbench for exploring, visualizing, and generating a wide variety of geometries that are
+        suited, to varying degrees, to becoming domes.
+    </p>
+
+    <div class="image-placeholder">
+        Future Image: Divided Spheres / Early DomeForge Screenshot
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>What Makes DomeForge Different?</h2>
+
+    <div class="feature-box">
+        <ol>
+
+            <li>
+                <strong>Interactive Geometry Preview</strong><br>
+                Every module displays the selected geometry in an interactive viewing window,
+                allowing immediate visual feedback while adjusting design parameters.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Real-Time Frequency Control</strong><br>
+                Dome frequency is controlled by a slider, allowing you to instantly explore
+                how a geometry evolves from a simple structure into a highly refined dome or sphere.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Real-Time Truncation Control</strong><br>
+                Dome truncation is also controlled by a slider. This allows you to continuously
+                explore shapes ranging from complete spheres to shallow dome caps.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>Adaptive Band Adjustment</strong><br>
+                An adaptive band control allows you to visualize and calculate custom strut
+                and panel dimensions required to create a perfectly flat base plane.
+            </li>
+
+            <br>
+
+            <li>
+                <strong>One-Click Fullerene Generation</strong><br>
+                Most modules support one of two fullerene conversion modes.
+                A single button press can transform a conventional dome geometry into
+                an entirely different class of spherical structure.
+            </li>
+
+        </ol>
+    </div>
+
+</div>
+
+<div class="section">
+
+    <h2>Export and Analysis</h2>
+
+    <p>
+        Once you have created a design, DomeForge can generate a complete output folder containing:
+    </p>
+
+    <ul>
+        <li>Dome summary reports</li>
+        <li>Strut schedules</li>
+        <li>Panel schedules</li>
+        <li>Geometry diagrams</li>
+        <li>OBJ geometry files</li>
+        <li>JSON geometry files</li>
+    </ul>
+
+    <p>
+        These outputs can be used directly in third-party structural analysis,
+        rendering, modeling, and graphics applications.
+    </p>
+
+</div>
+
+<div class="section">
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+        DomeForge began as an experiment and grew into a passion project.
+    </p>
+
+    <p>
+        My hope is that it will be useful to dome builders, educators, students,
+        architects, engineers, and anyone who enjoys exploring geometry.
+    </p>
+
+    <p>
+        Most importantly, have fun with it.
+    </p>
+
+    <p>
+        If you try DomeForge, I would love to hear what brought you here,
+        whether it was helpful, and what improvements you would like
+        to see in future versions.
+    </p>
+
+</div>
+
+<footer>
+    © 2026 DomeForge
+</footer>
+
+</body>
+</html>
