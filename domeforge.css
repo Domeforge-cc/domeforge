@@ -1,0 +1,423 @@
+/* =========================================================
+   DOMEFORGE MASTER STYLESHEET
+   Version 2.4
+   ========================================================= */
+
+:root {
+
+    --df-bg: #0e1624;
+
+    --df-text: #e7edf5;
+    --df-text-soft: #b8c4d3;
+
+    --df-accent: #5fc8ff;
+    --df-accent-hover: #87d9ff;
+
+    --df-nav: rgba(25,40,60,0.92);
+
+    --df-border: rgba(95,200,255,0.15);
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--df-bg);
+
+    color: var(--df-text);
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    line-height: 1.7;
+
+    position: relative;
+}
+
+/* =========================================================
+   DOMEFORGE LOGO
+   ========================================================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    top: 65px;
+    left: 35px;
+
+    width: 80px;
+    height: 80px;
+
+    background-image: url("D V2 Designer.png.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.95;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+/* =========================================================
+   SRID WIREFRAME
+   ========================================================= */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    top: -30px;
+    right: -100px;
+
+    width: 900px;
+    height: 900px;
+
+    background-image: url("srid_wireframe_bg.png");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    opacity: 0.30;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin-top: 0;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+h1 {
+
+    color: var(--df-accent);
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+}
+
+h2 {
+
+    color: var(--df-accent);
+
+    margin-top: 22px;
+
+    margin-bottom: 10px;
+}
+
+h3 {
+
+    color: var(--df-accent-hover);
+
+    margin-bottom: 6px;
+}
+
+h4 {
+
+    color: var(--df-accent-hover);
+
+    margin-top: 16px;
+
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+p {
+
+    color: var(--df-text-soft);
+
+    font-size: 1.05rem;
+
+    margin-top: 0;
+}
+
+.tagline {
+
+    font-size: 1.3rem;
+
+    color: var(--df-text-soft);
+
+    margin-top: 6px;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+
+    color: var(--df-accent);
+
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: var(--df-accent-hover);
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+nav {
+
+    background: var(--df-nav);
+
+    backdrop-filter: blur(8px);
+
+    border-bottom: 1px solid rgba(95,200,255,0.20);
+
+    padding: 14px 30px;
+
+    display: flex;
+
+    gap: 28px;
+}
+
+nav a {
+
+    color: var(--df-accent);
+
+    font-weight: 600;
+}
+
+nav a:hover {
+
+    color: var(--df-accent-hover);
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+
+    text-align: center;
+
+    padding: 25px 30px 20px 30px;
+
+    background: transparent;
+
+    border: none;
+}
+
+header p {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* =========================================================
+   CONTENT AREA
+   ========================================================= */
+
+.section {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 10px 35px;
+}
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+ul,
+ol {
+
+    line-height: 1.7;
+
+    margin-top: 6px;
+}
+
+li {
+
+    margin-bottom: 4px;
+}
+
+/* =========================================================
+   MODULES
+   ========================================================= */
+
+.module-content {
+
+    padding: 0 18px 18px 18px;
+}
+
+/* =========================================================
+   DOWNLOAD AREAS
+   ========================================================= */
+
+.download-box {
+
+    background: transparent;
+
+    border: none;
+
+    padding: 0;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.download-button {
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    background: var(--df-accent);
+
+    color: #081018;
+
+    font-weight: 700;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.download-button:hover {
+
+    background: var(--df-accent-hover);
+
+    color: #081018;
+}
+
+/* =========================================================
+   ACCORDIONS
+   ========================================================= */
+
+details {
+
+    margin-top: 12px;
+
+    background: transparent;
+
+    border: 1px solid var(--df-border);
+
+    border-radius: 8px;
+}
+
+summary {
+
+    padding: 12px;
+
+    cursor: pointer;
+
+    color: var(--df-accent);
+
+    font-weight: 600;
+
+    font-size: 1.1rem;
+}
+
+summary:hover {
+
+    color: var(--df-accent-hover);
+}
+
+.summary-content {
+
+    padding: 0 18px 18px 18px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #8894a5;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    nav {
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .section {
+
+        padding: 10px 20px;
+    }
+
+    body::before {
+
+        width: 60px;
+        height: 60px;
+
+        left: 15px;
+        top: 70px;
+    }
+
+    body::after {
+
+        width: 450px;
+        height: 450px;
+
+        right: -140px;
+        top: -20px;
+
+        opacity: 0.20;
+    }
+}
