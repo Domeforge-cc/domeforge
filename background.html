@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DomeForge</title>
+<title>DomeForge - Background</title>
 
 <link rel="stylesheet" href="domeforge.css">
 
@@ -19,86 +19,170 @@
     <a href="background.html">Background</a>
     <a href="modules.html">Modules</a>
     <a href="downloads.html">Downloads</a>
+    <a href="documentation.html">Documentation</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
 </nav>
 
 <header>
 
-    <h1>DomeForge</h1>
+    <h1>Background</h1>
 
     <div class="tagline">
-        Create Advanced Dome Geometries in Minutes
+        How DomeForge Came To Be
     </div>
 
 </header>
 
 <div class="section">
 
-    <h2>Overview</h2>
+    <h2>Origin Story</h2>
 
     <p>
-        DomeForge is a unified suite of geometry engines and visualization tools for exploring geodesic domes, orderly sphere subdivisions, polyhedra, and alternative structural geometries.
+        Geodesic domes were popularized during the 1960s and 1970s by Buckminster Fuller and his many advocates.
+        They embodied both a futuristic aesthetic and remarkable structural efficiency, leading to applications
+        ranging from modest dome homes to iconic structures such as Spaceship Earth at EPCOT and the United States
+        Pavilion at Expo 67, now known as the Biosphere, in Montreal, Canada.
     </p>
 
     <p>
-        Combining interactive geometry generators with modern visualization tools, DomeForge allows builders, makers, students, engineers, architects and hobbyists to rapidly create, inspect, compare and export dome designs.
+        The icosahedron eventually became the dominant geometry used for geodesic dome construction. However,
+        obtaining the detailed geometric information required for structural analysis, fabrication, and
+        visualization was often difficult and time consuming.
     </p>
 
     <p>
-        Inspired by the pioneering work of Buckminster Fuller, Edward S. Popko's
-        <em>Divided Spheres</em>, and a modern effort to recreate advanced geodesic design tools using AI-assisted software development.
+        As an exploratory project, I became curious whether modern AI could help recreate a geodesic design
+        application similar to one I had written in FORTRAN during the 1970s.
+    </p>
+
+    <p>
+        To my surprise, it could.
+    </p>
+
+    <p>
+        In less than a day I had the beginnings of an application that already exceeded the capabilities
+        of my original effort.
+    </p>
+
+    <p>
+        One thing led to another, and I soon found myself heading down the dome rabbit hole.
+    </p>
+
+    <p>
+        Along the way I discovered an entire world of dome and sphere geometries described in Edward S. Popko's
+        excellent book <em>Divided Spheres</em>.
+    </p>
+
+    <p>
+        If you are interested in geodesic domes, polyhedra, and orderly sphere subdivisions, I highly recommend it.
+    </p>
+
+    <p>
+        DomeForge was heavily inspired by that work and represents my attempt to provide a generalized workbench
+        for exploring, visualizing, and generating a wide variety of geometries that are suited, to varying
+        degrees, to becoming domes.
+    </p>
+
+    <!-- Replace with actual image -->
+
+    <p style="text-align:center; margin-top:25px;">
+        <img src="divided_spheres.jpg"
+             alt="Divided Spheres"
+             style="max-width:175px;">
     </p>
 
 </div>
 
 <div class="section">
 
-    <h2>DomeForge Modules</h2>
+    <h2>What Makes DomeForge Different?</h2>
 
-    <h3>Classic Geometry</h3>
+    <ol>
 
-    <ul>
-        <li>Tetrahedron</li>
-        <li>Hexahedron / Cube</li>
-        <li>Octahedron</li>
-        <li>Icosahedron</li>
-        <li>Dodecahedron</li>
-    </ul>
+        <li>
+            <strong>Interactive Geometry Preview</strong><br>
+            Every module displays the selected geometry in an interactive viewing window, allowing immediate visual feedback while adjusting design parameters.
+        </li>
 
-    <h3>Patterned Geometry</h3>
+        <br>
 
-    <ul>
-        <li>Lamella</li>
-        <li>Schwedler</li>
-        <li>Fibonacci Dome</li>
-        <li>ElliptiDome</li>
-        <li>WarpSurf</li>
-    </ul>
+        <li>
+            <strong>Real-Time Frequency Control</strong><br>
+            Dome frequency is controlled by a slider, allowing you to instantly explore how a geometry evolves from a simple structure into a highly refined dome or sphere.
+        </li>
 
-    <h3>Exotic Geometry</h3>
+        <br>
 
-    <ul>
-        <li>Snub Cube</li>
-        <li>Snub Dodecahedron</li>
-        <li>Small Rhombicuboctahedron (SRCO)</li>
-        <li>Small Rhombicosidodecahedron (SRID)</li>
-        <li>BiPyramid Dome</li>
-    </ul>
+        <li>
+            <strong>Real-Time Truncation Control</strong><br>
+            Dome truncation is controlled by a slider, allowing continuous exploration of shapes ranging from complete spheres to shallow dome caps.
+        </li>
+
+        <br>
+
+        <li>
+            <strong>Adaptive Band Adjustment</strong><br>
+            An adaptive band control allows you to visualize and calculate custom strut and panel dimensions required to create a perfectly flat base plane.
+        </li>
+
+        <br>
+
+        <li>
+            <strong>One-Click Fullerene Generation</strong><br>
+            Most modules support one of two fullerene conversion modes. A single button press can transform a conventional dome geometry into an entirely different class of spherical structure.
+        </li>
+
+    </ol>
 
 </div>
 
 <div class="section">
 
-    <h2>Download Now!</h2>
+    <h2>Export and Analysis</h2>
 
     <p>
-        Download DomeForge today and begin exploring geodesic domes, alternative dome geometries, polyhedra, and orderly sphere subdivisions.
+        Once a design has been created, DomeForge can generate a complete output folder containing:
+    </p>
+
+    <ul>
+        <li>Dome summary reports</li>
+        <li>Strut schedules</li>
+        <li>Panel schedules</li>
+        <li>Geometry diagrams</li>
+        <li>OBJ geometry files</li>
+        <li>JSON geometry files</li>
+    </ul>
+
+    <p>
+        These outputs can be used directly in third-party structural analysis, rendering, modeling, and graphics applications.
+    </p>
+
+</div>
+
+<div class="section">
+
+    <h2>Final Thoughts</h2>
+
+    <p>
+        DomeForge began as an experiment and gradually grew into a passion project.
     </p>
 
     <p>
-        <a class="download-button" href="downloads.html">
-            No Cost Download →
+        My hope is that it will be useful to dome builders, educators, students, architects, engineers, and anyone who enjoys exploring geometry.
+    </p>
+
+    <p>
+        Most importantly, have fun with it.
+    </p>
+
+    <p>
+        If you try DomeForge, I would love to hear what brought you here, whether it was helpful, and what improvements you would like to see in future versions.
+    </p>
+
+    <p>
+        <a href="contact.html">
+            Contact DomeForge →
         </a>
     </p>
 
