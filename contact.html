@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Contact DomeForge for technical support, bug reports, licensing questions, and feedback."><title>Contact — DomeForge</title><link rel="stylesheet" href="domeforge.css"></head>
+<body><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="background.html">Background</a><a href="modules.html">Modules</a><a href="downloads.html">Downloads</a><a href="contact.html" aria-current="page">Contact</a></nav>
+<header><h1>Contact DomeForge</h1><div class="tagline">Questions, support, bug reports &amp; suggestions</div></header>
+<main class="section"><div class="contact-layout"><section class="contact-panel" aria-labelledby="contact-heading"><h2 id="contact-heading">Send us a message</h2><p>We welcome questions and feedback about DomeForge. Complete the form to prepare an email in your email application.</p>
+<form id="contact-form"><div class="contact-field"><label for="topic">How can we help?</label><select id="topic" required><option value="General question">General question</option><option value="Technical support">Technical support</option><option value="Bug report">Report a bug</option><option value="Licensing or purchase">Licensing or purchase assistance</option><option value="Feature request or feedback">Feature request or feedback</option></select></div>
+<div class="contact-field"><label for="name">Your name</label><input id="name" type="text" autocomplete="name" maxlength="100" required></div>
+<div class="contact-field"><label for="email">Your email address</label><input id="email" type="email" autocomplete="email" maxlength="200" required></div>
+<div class="contact-field"><label for="module">Module and version <span class="contact-muted">(optional)</span></label><input id="module" type="text" placeholder="e.g., IcosaDome2m" maxlength="150"></div>
+<div class="contact-field"><label for="message">Your message</label><textarea id="message" required maxlength="6000" placeholder="Describe your question or problem. For bug reports, include what you were doing and what happened."></textarea></div>
+<button class="download-button contact-submit" type="submit">Prepare Email</button><p class="contact-muted">This opens your device's default email application with the message filled in. Review it and click Send there. Nothing is sent automatically.</p><p class="contact-status" id="contact-status" role="status" aria-live="polite"></p></form></section>
+<aside class="contact-panel"><h2>Email us directly</h2><p>If you prefer, send a message using your regular email service:</p><p><a class="contact-email" href="mailto:support@domeforge.cc">support@domeforge.cc</a></p><p class="contact-muted">For technical issues, please include the module name, version, and steps to reproduce the problem. Please do not include passwords, license keys, or other sensitive information.</p><h3>How it works</h3><p class="contact-muted">Our support address forwards messages securely to the DomeForge Support Team. We'll respond by email.</p></aside></div></main><footer>© 2026 DomeForge</footer>
+<script>
+(function(){
+  const form=document.getElementById('contact-form');
+  form.addEventListener('submit',function(event){
+    event.preventDefault();
+    if(!form.reportValidity()) return;
+    const get=id=>document.getElementById(id).value.trim();
+    const subject='DomeForge — '+get('topic');
+    const body=['Category: '+get('topic'),'Name: '+get('name'),'Reply-to: '+get('email'),'Module/version: '+(get('module')||'Not specified'),'','Message:',get('message')].join('\n');
+    const uri='mailto:support@domeforge.cc?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    if(uri.length>1900){document.getElementById('contact-status').textContent='Your message is too long for an email link. Please email support@domeforge.cc directly and paste your message.';return;}
+    document.getElementById('contact-status').textContent='Your email application should open. Please click Send there to deliver your message.';
+    window.location.href=uri;
+  });
+})();
+</script></body></html>
